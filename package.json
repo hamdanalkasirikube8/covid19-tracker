@@ -3,16 +3,19 @@
   "version": "0.0.0",
   "author": "Hamdan Alkasiri",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
-    "start:prod": "node server.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~10.1.0",
+    "@angular/compiler-cli": "~10.1.0",
     "@agm/core": "1.0.0",
     "@angular/animations": "~10.1.0",
     "@angular/cdk": "^10.2.7",
@@ -30,14 +33,16 @@
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "ngx-material-timepicker": "^5.5.3",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    
+    "typescript": "~4.0.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.0",
-    "@angular/cli": "~10.1.0",
-    "@angular/compiler-cli": "~10.1.0",
+
     "@types/googlemaps": "^3.39.14",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
@@ -52,7 +57,10 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "tslint": "~6.1.0"
+  },
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
   }
 }
