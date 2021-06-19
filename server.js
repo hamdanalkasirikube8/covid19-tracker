@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static("./dist/project-name"));
 
 app.get("/*", function (req, res) {
-    res.sendFile("index.html", { root: "dist/covid19-tracker" });
+    res.sendFile("index.html", { root: "dist/covid-tracker" });
 });
 
 app.listen(process.env.PORT || 8080);
