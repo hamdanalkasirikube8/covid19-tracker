@@ -1,0 +1,28 @@
+mat-form-field {
+  margin-right: 10px;
+  width: 200px;
+}
+div {
+  padding: 10px;
+}
+.example-card {
+  min-height: 400px;
+  height: auto;
+}
+
+::ng-deep ngx-material-timepicker-content {
+  --body-background-color: #fff;
+  --primary-font-family: "Roboto", sans-serif;
+  --button-color: #3f51b5 !important;
+  --dial-active-color: #fff;
+  --dial-inactive-color: rgba(255, 255, 255, 0.5);
+  --dial-background-color: #3f51b5 !important;
+  --dial-editable-active-color: #blue !important;
+  --dial-editable-background-color: #fff;
+  --clock-face-time-active-color: #fff;
+  --clock-face-time-inactive-color: #6c6c6c;
+  --clock-face-inner-time-inactive-color: #929292;
+  --clock-face-time-disabled-color: #c5c5c5;
+  --clock-face-background-color: #f0f0f0;
+  --clock-hand-color: #3f51b5 !important;
+}

@@ -1,0 +1,19 @@
+<div>
+  <agm-map 
+  [latitude]="locationMarker.lat"
+  [longitude]="locationMarker.lng"
+  [zoom]="zoom"
+  [disableDefaultUI]="false"
+  [zoomControl]="false"
+  (mapClick)="mapClicked($event)">
+
+  <agm-marker 
+      (markerClick)="clickedMarker(locationMarker)"
+      [latitude]="locationMarker.lat"
+      [longitude]="locationMarker.lng"
+      [markerDraggable]="true"
+      (dragEnd)="markerDragEnd($event)"
+      >
+  </agm-marker>
+</agm-map>
+</div>
