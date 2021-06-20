@@ -1,6 +1,6 @@
 import { Marker } from './../classes-interfaces/marker';
 import { GeolocationApiService } from './../services/geolocation-api.service';
-import { Component, OnInit, NgZone, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, NgZone, Output, EventEmitter, SimpleChanges } from '@angular/core';
 import { MouseEvent, MapsAPILoader } from "@agm/core";
 
 @Component({
@@ -27,6 +27,13 @@ export class MapComponentComponent implements OnInit {
 
   ngOnInit(): void {
     this.getLocation.call(this);
+  }
+  ngAfterViewInit(): void {
+    this.getLocation.call(this);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+
   }
 
   getLocation() {
