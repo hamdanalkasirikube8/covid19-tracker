@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Covid-19 tracker
 
+### Track people I have met
+With Corona spreading around the world you might be in the situation where you need to tell authorities which people you have met the last 14 days. Our little web(app) should help you exactly with that. It will enable the user to note which persons he/she met at which date.
+
 The project is built with Angular 10. Bootstrap 4 and Angular components are used to create the user interface.
 The application allows the user to add information about people whom they have visited. The information includes the person's name, date, time, and location of the meeting.
 
